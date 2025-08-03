@@ -1,0 +1,87 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ShoppingCart, PawPrint, Truck, BadgePercent } from "lucide-react";
+
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-green-100 p-4">
+      <section className="text-center py-8">
+        <img src="/buddybox-logo.png" alt="BuddyBox Logo" className="mx-auto w-32 mb-4" />
+        <h1 className="text-4xl font-bold text-brown-800">BuddyBox</h1>
+        <p className="text-xl text-brown-600 italic">Love is pawsome for us</p>
+        <div className="mt-4">
+          <Button className="bg-pink-500 text-white px-6 py-2 rounded-full shadow-xl hover:bg-pink-600">
+            Shop Now
+          </Button>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+        {["Pet Grooming", "Pet Toys", "Pet Treats", "Winter Collection", "Summer Collection", "Pet Beds", "Essentials", "Accessories", "Carriers"].map((category) => (
+          <Card key={category} className="rounded-2xl shadow-md hover:shadow-xl transition">
+            <CardContent className="p-6 text-center">
+              <PawPrint className="mx-auto text-pink-500 w-10 h-10 mb-2" />
+              <h2 className="text-lg font-semibold text-brown-700">{category}</h2>
+              <p className="text-sm text-brown-500">Explore our best {category.toLowerCase()}!</p>
+            </CardContent>
+          </Card>
+        ))}
+      </section>
+
+      <section className="mt-16 text-center">
+        <div className="flex justify-center gap-6 flex-wrap">
+          <div className="text-center">
+            <Truck className="w-10 h-10 text-green-600 mx-auto" />
+            <p className="text-sm mt-2 text-brown-600">Free Delivery within 10km</p>
+          </div>
+          <div className="text-center">
+            <BadgePercent className="w-10 h-10 text-yellow-600 mx-auto" />
+            <p className="text-sm mt-2 text-brown-600">₹200 delivery beyond 10km</p>
+          </div>
+          <div className="text-center">
+            <ShoppingCart className="w-10 h-10 text-pink-500 mx-auto" />
+            <p className="text-sm mt-2 text-brown-600">UPI Payments Accepted</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+
+🎉 Your BuddyBox website design is now under construction with the following style:
+
+🌈 Colorful & Fun
+
+✨ Lightly Premium and Clean
+
+📦 Free delivery within 10 km, ₹200 beyond
+
+💳 UPI payment support
+
+🐾 Product categories beautifully listed
+
+📱 Instagram-ready modern layout
+
+
+Next, I’ll:
+
+Add sample products
+
+Connect pages (Shop, Cart, Blog, etc.)
+
+Prepare it for deployment (free host like Vercel)
+
+
+Would you like me to:
+
+1. Deploy the preview website online now (you'll get a link), or
+
+
+2. Send you the code files to upload manually later?
+
+
+
+Let me know how you'd like to proceed.
+
